@@ -17,7 +17,7 @@ for i in {1..2}; do
     cat xxoo padding.bin > tmp_xxoo
     chmod +x tmp_xxoo
     upx --best -o obfuscated_xxoo tmp_xxoo
-    mv obfuscated_xxoo xxoo_1
+    mv obfuscated_xxoo xxoo_${i}
     rm -rf padding.bin
     rm -rf tmp_xxoo
     current_time=$(date +%s)
